@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: local("IBM Plex Mono Bold"), local("IBMPlexMono-Bold"), url("woff2/IBMPlexMono-Bold.woff2") format("woff2"), url("woff/IBMPlexMono-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 700;
+  src: local("IBM Plex Mono Bold Italic"), local("IBMPlexMono-BoldItalic"), url("woff2/IBMPlexMono-BoldItalic.woff2") format("woff2"), url("woff/IBMPlexMono-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 200;
+  src: local("IBM Plex Mono ExtLt"), local("IBMPlexMono-ExtLt"), url("woff2/IBMPlexMono-ExtraLight.woff2") format("woff2"), url("woff/IBMPlexMono-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 200;
+  src: local("IBM Plex Mono ExtLt Italic"), local("IBMPlexMono-ExtLtItalic"), url("woff2/IBMPlexMono-ExtraLightItalic.woff2") format("woff2"), url("woff/IBMPlexMono-ExtraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: local("IBM Plex Mono Italic"), local("IBMPlexMono-Italic"), url("woff2/IBMPlexMono-Italic.woff2") format("woff2"), url("woff/IBMPlexMono-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 300;
+  src: local("IBM Plex Mono Light"), local("IBMPlexMono-Light"), url("woff2/IBMPlexMono-Light.woff2") format("woff2"), url("woff/IBMPlexMono-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 300;
+  src: local("IBM Plex Mono Light Italic"), local("IBMPlexMono-LightItalic"), url("woff2/IBMPlexMono-LightItalic.woff2") format("woff2"), url("woff/IBMPlexMono-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: local("IBM Plex Mono Medm"), local("IBMPlexMono-Medm"), url("woff2/IBMPlexMono-Medium.woff2") format("woff2"), url("woff/IBMPlexMono-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 500;
+  src: local("IBM Plex Mono Medm Italic"), local("IBMPlexMono-MedmItalic"), url("woff2/IBMPlexMono-MediumItalic.woff2") format("woff2"), url("woff/IBMPlexMono-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("IBM Plex Mono"), local("IBMPlexMono"), url("woff2/IBMPlexMono-Regular.woff2") format("woff2"), url("woff/IBMPlexMono-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: local("IBM Plex Mono SmBld"), local("IBMPlexMono-SmBld"), url("woff2/IBMPlexMono-SemiBold.woff2") format("woff2"), url("woff/IBMPlexMono-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 600;
+  src: local("IBM Plex Mono SmBld Italic"), local("IBMPlexMono-SmBldItalic"), url("woff2/IBMPlexMono-SemiBoldItalic.woff2") format("woff2"), url("woff/IBMPlexMono-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 450;
+  src: local("IBM Plex Mono Text"), local("IBMPlexMono-Text"), url("woff2/IBMPlexMono-Text.woff2") format("woff2"), url("woff/IBMPlexMono-Text.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 450;
+  src: local("IBM Plex Mono Text Italic"), local("IBMPlexMono-TextItalic"), url("woff2/IBMPlexMono-TextItalic.woff2") format("woff2"), url("woff/IBMPlexMono-TextItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 100;
+  src: local("IBM Plex Mono Thin"), local("IBMPlexMono-Thin"), url("woff2/IBMPlexMono-Thin.woff2") format("woff2"), url("woff/IBMPlexMono-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 100;
+  src: local("IBM Plex Mono Thin Italic"), local("IBMPlexMono-ThinItalic"), url("woff2/IBMPlexMono-ThinItalic.woff2") format("woff2"), url("woff/IBMPlexMono-ThinItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: local("IBM Plex Sans Cond Bold"), local("IBMPlexSansCond-Bold"), url("woff2/IBMPlexSansCondensed-Bold.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: italic;
+  font-weight: 700;
+  src: local("IBM Plex Sans Cond Bold Italic"), local("IBMPlexSansCond-BoldItalic"), url("woff2/IBMPlexSansCondensed-BoldItalic.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 200;
+  src: local("IBM Plex Sans Cond ExtLt"), local("IBMPlexSansCond-ExtLt"), url("woff2/IBMPlexSansCondensed-ExtraLight.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: italic;
+  font-weight: 200;
+  src: local("IBM Plex Sans Cond ExtLt Italic"), local("IBMPlexSansCond-ExtLtItalic"), url("woff2/IBMPlexSansCondensed-ExtraLightItalic.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-ExtraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: italic;
+  font-weight: 400;
+  src: local("IBM Plex Sans Cond Italic"), local("IBMPlexSansCond-Italic"), url("woff2/IBMPlexSansCondensed-Italic.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 300;
+  src: local("IBM Plex Sans Cond Light"), local("IBMPlexSansCond-Light"), url("woff2/IBMPlexSansCondensed-Light.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: italic;
+  font-weight: 300;
+  src: local("IBM Plex Sans Cond Light Italic"), local("IBMPlexSansCond-LightItalic"), url("woff2/IBMPlexSansCondensed-LightItalic.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: local("IBM Plex Sans Cond Medm"), local("IBMPlexSansCond-Medm"), url("woff2/IBMPlexSansCondensed-Medium.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: italic;
+  font-weight: 500;
+  src: local("IBM Plex Sans Cond Medm Italic"), local("IBMPlexSansCond-MedmItalic"), url("woff2/IBMPlexSansCondensed-MediumItalic.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: local("IBM Plex Sans Cond"), local("IBMPlexSansCond"), url("woff2/IBMPlexSansCondensed-Regular.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: local("IBM Plex Sans Cond SmBld"), local("IBMPlexSansCond-SmBld"), url("woff2/IBMPlexSansCondensed-SemiBold.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: italic;
+  font-weight: 600;
+  src: local("IBM Plex Sans Cond SmBld Italic"), local("IBMPlexSansCond-SmBldItalic"), url("woff2/IBMPlexSansCondensed-SemiBoldItalic.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 450;
+  src: local("IBM Plex Sans Cond Text"), local("IBMPlexSansCond-Text"), url("woff2/IBMPlexSansCondensed-Text.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-Text.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: italic;
+  font-weight: 450;
+  src: local("IBM Plex Sans Cond Text Italic"), local("IBMPlexSansCond-TextItalic"), url("woff2/IBMPlexSansCondensed-TextItalic.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-TextItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 100;
+  src: local("IBM Plex Sans Cond Thin"), local("IBMPlexSansCond-Thin"), url("woff2/IBMPlexSansCondensed-Thin.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: italic;
+  font-weight: 100;
+  src: local("IBM Plex Sans Cond Thin Italic"), local("IBMPlexSansCond-ThinItalic"), url("woff2/IBMPlexSansCondensed-ThinItalic.woff2") format("woff2"), url("woff/IBMPlexSansCondensed-ThinItalic.woff") format("woff");
+}

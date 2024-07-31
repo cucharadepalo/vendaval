@@ -1,11 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gl" class="font-mono leading-tight snap-y snap-proximity">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Vendaval &mdash; 1&ordf; Mostra de cinema portugu&eacute;s. 23-25 agosto. Ribeira Sacra</title>
+	<link rel="stylesheet" href="fonts/IBM-Plex/ibm-plex.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/app.js" defer></script>
 </head>
-<body>
+<body class="bg-verdescuro text-white">
+	<header id="splash" class="relative h-svh snap-start px-4 py-4 pb-8 flex flex-col justify-between items-center gap-8 w-full max-w-screen-xl mx-auto md:px-8 md:pt-8 md:pb-16">
+		<div class="splash-bg top-4 left-4 right-2 bottom-8 md:top-8 md:left-8 md:right-4 md:bottom-16"></div>
+		<img src="img/vendaval-title.svg" width="321" height="57" alt="1&ordf; Mostra de Cinema Portugués da Ribeira Sacra. 23-25 Agosto." class="w-full h-auto block max-w-screen-xl -mt-1">
+
+		<a href="#programa"  class="btn smooth-scroller text-xl shadow-xl mt-auto flex justify-between gap-2 -skew-x-6 ml-auto mr-4"><span class="skew-x-6">Programa</span> <span class="block bounce">&darr;</span></a>
+
+		<h1 class="w-full max-w-screen-xl">
+			<svg viewBox="0 0 515 136" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+				<title>Vendaval</title>
+				<path d="M0 0H18.8004L24.1205 118.8H34.2907L39.6008 0H58.4011L50.801 136H7.60015L0 0Z"/><path d="M69.6013 0H118.001V17.4H88.4014V59.6H113.201V76.2H88.4014V118.6H118.001V136H69.6013V0Z"/><path d="M129.393 0H151.793L172.453 100.25L172.593 0H188.394V136H165.393L145.193 38.92V136H129.393V0Z"/><path d="M201.594 0H238.395C242.925 0 246.625 0.73 249.495 2.2C252.365 3.67 254.565 6.03 256.095 9.3C257.625 12.57 258.395 16.87 258.395 22.2V113.8C258.395 119.13 257.625 123.43 256.095 126.7C254.565 129.97 252.365 132.33 249.495 133.8C246.625 135.27 242.925 136 238.395 136H201.594V0ZM236.905 118C237.775 117.6 238.435 116.9 238.905 115.9C239.365 114.9 239.605 113.47 239.605 111.6V24.4C239.605 22.53 239.375 21.1 238.905 20.1C238.435 19.1 237.775 18.4 236.905 18C236.035 17.6 234.735 17.4 233.005 17.4H220.404V118.6H233.005C234.735 118.6 236.035 118.4 236.905 118Z"/><path d="M308.196 136H326.796L319.196 0H275.995L268.395 136H287.196L289.046 96.2H306.286L308.196 136ZM289.856 79L292.726 17.2H302.486L305.456 79H289.846H289.856Z"/><path d="M333.396 0H352.197L357.517 118.8H367.697L372.997 0H391.798L384.197 136H340.997L333.396 0Z"/><path d="M438.199 136H456.799L449.199 0H405.998L398.398 136H417.198L419.048 96.2H436.288L438.199 136ZM419.858 79L422.728 17.2H432.488L435.458 79H419.848H419.858Z"/><path d="M467.999 0H486.799V118.6H514.999V136H467.999V0Z"/>
+			</svg>
+		</h1>
+	</header>
+
+	<main id="programa" class="snap-start">
+		<div class="min-h-svh flex flex-col w-full max-w-[2560px] mx-auto">
+			<div class="tabs sticky top-0">
+				<ul class="tab-menu" role="tablist">
+					<li>
+						<button id="tab-23ago" aria-selected="true" aria-controls="23ago" role="tab" type="button" tabindex="0">23<span class="md:hidden">/</span><span class="hidden md:inline"> de </span>ago<span class="hidden md:inline">sto</span></button>
+					</li>
+					<li>
+						<button id="tab-24ago" aria-selected="false" aria-controls="24ago" role="tab" type="button" tabindex="-1">24<span class="md:hidden">/</span><span class="hidden md:inline"> de </span>ago<span class="hidden md:inline">sto</span></button>
+					</li>
+					<li>
+						<button id="tab-25ago" aria-selected="false" aria-controls="25ago" role="tab" type="button" tabindex="-1">25<span class="md:hidden">/</span><span class="hidden md:inline"> de </span>ago<span class="hidden md:inline">sto</span></button>
+					</li>
+				</ul>
+			</div>
+
+			<div class="bg-amarelo text-black px-4 pb-8 flex-grow md:px-8 2xl:px-16">
+
+				<section id="23ago" aria-label="Venres 23 de agosto" aria-labelledby="tab-23ago" role="tabpanel" tabindex="0">
+					<header>
+						<h2 class="day-title">Venres 23 de agosto</h2>
+						<p class="day-location">Xullán, Bóveda</p>
+						<p class="day-venue">Casa da Memoria <a href="https://www.google.com/maps/place/Casa+da+memoria/@42.6392777,-7.4717012,17z/data=!3m1!4b1!4m6!3m5!1s0xd303f99e14d7301:0xdd44240b739d5051!8m2!3d42.6392738!4d-7.4691263!16s%2Fg%2F11sw2wf03p!5m1!1e4?hl=gl-ES&entry=ttu" target="_blank" class="btn-map"><svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" fill="currentColor"/><circle cx="12" cy="10" r="3" fill="#f59f03"/></svg></a></p>
+					</header>
+
+					<div class="event-grid lg:grid-cols-3 lg:gap-16">
+						<details class="event" name="23ago">
+							<summary class="event-meta">
+								19h &mdash; Cinema
+							</summary>
+							<p class="font-medium leading-tight my-6">Presentación a cargo do crítico de cinema Martín Pawley</p>
+							<div class="event-item">
+								<h3 class="event-title">Tão pequeninas, tinham o ar de serem já crescidas</h3>
+								<div class="event-details">
+									<p>Tânia Dinis, 2024, DOC, 20&rsquo;, PT</p>
+									<p>Versión orixinal subtitulada ao galego</p>
+									<p>Coa presenza da realizadora</p>
+								</div>
+								<img src="img/tao_pequeninas.jpg" width="640" height="360" class="event-img" alt="Fotograma da película">
+							</div>
+							<div class="event-item">
+								<h3 class="event-title">Cartas a uma ditadura</h3>
+								<div class="event-details">
+									<p>Inês de Medeiros, 2008, DOC, 60&rsquo;, PT</p>
+									<p>Versión orixinal subtitulada ao español</p>
+								</div>
+								<img src="img/cartas_a_uma_dictadura.jpg" width="640" height="360" class="event-img" alt="Fotograma da película">
+							</div>
+						</details>
+						<details class="event" name="23ago">
+							<summary class="event-meta">
+								22h &mdash; Cinema ao aire libre
+							</summary>
+							<p class="font-medium leading-tight my-6">Presentación a cargo do crítico de cinema Martín Pawley</p>
+							<div class="event-item">
+								<h3 class="event-title">O Corno</h3>
+								<div class="event-details">
+									<p>Jaione Camborda, 2023, FIC, 103&rsquo;, ES / PT / BE</p>
+									<p>Versión orixinal subtitulada ao galego</p>
+								</div>
+								<img src="img/o_corno_(c)Amador_Lorenzo_6.jpg" width="640" height="360" class="event-img" alt="Fotograma da película">
+							</div>
+						</details>
+						<details class="event" name="23ago">
+							<summary class="event-meta">
+								00h &mdash; Música
+							</summary>
+							<div class="event-item">
+								<h3 class="event-title">DJ Jufra</h3>
+								<div class="event-details">
+									<p>Dj set en vinilo de discográficas independientes dos anos 70 e bandas sonoras, ES</p>
+								</div>
+								<img src="img/dj_jufra.jpg" width="640" height="360" class="event-img" alt="DJ Jufra nos pratos">
+							</div>
+						</details>
+					</div>
+				</section>
+
+				<section id="24ago" aria-label="Sábado 24 de agosto" aria-labelledby="tab-24ago" role="tabpanel" tabindex="-1" hidden>
+					<header>
+						<h2 class="day-title">Sábado 24 de agosto</h2>
+						<p class="day-location">Xullán, Bóveda</p>
+						<p class="day-venue">Casa da Memoria <a href="https://www.google.com/maps/place/Casa+da+memoria/@42.6392777,-7.4717012,17z/data=!3m1!4b1!4m6!3m5!1s0xd303f99e14d7301:0xdd44240b739d5051!8m2!3d42.6392738!4d-7.4691263!16s%2Fg%2F11sw2wf03p!5m1!1e4?hl=gl-ES&entry=ttu" target="_blank" class="btn-map"><svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" fill="currentColor"/><circle cx="12" cy="10" r="3" fill="#f59f03"/></svg></a></p>
+					</header>
+
+					<div class="event-grid lg:grid-cols-4 lg:gap-8 2xl:gap-16">
+
+						<details class="event" name="24ago">
+							<summary class="event-meta">
+								17h &mdash; Cinema + Taller
+							</summary>
+							<div class="event-item">
+								<h3 class="event-title">O Casaco Rosa</h3>
+								<div class="event-details">
+									<p>Mónica Santos, 2022, ANI, 8&rsquo;, PT</p>
+									<p>Versión orixinal subtitulada ao español</p>
+									<p>Taller para nenos e xoves impartido polo colectivo FITA - Cinema com Olhos de ver, en galego e portugués</p>
+								</div>
+								<img src="img/o_casaco_rosa.jpg" width="640" height="360" class="event-img" alt="Fotograma da película">
+							</div>
+						</details>
+
+						<details class="event" name="24ago">
+							<summary class="event-meta">
+								19h &mdash; Cinema
+							</summary>
+
+							<p class="font-medium leading-tight my-6">Presentación a cargo do crítico de cinema Martín Pawley</p>
+
+							<div class="event-item">
+								<h3 class="event-title">48</h3>
+								<div class="event-details">
+									<p>Susana Sousa Dias, 2009, DOC, 93&rsquo;, PT</p>
+									<p>Versión orixinal subtitulada ao español</p>
+								</div>
+								<img src="img/48_ssd_01a.jpg" width="640" height="360" class="event-img" alt="Fotograma da película">
+							</div>
+						</details>
+						
+						<details class="event" name="24ago">
+							<summary class="event-meta">
+								22h &mdash; Cinema ao aire libre
+							</summary>
+							<p class="font-medium leading-tight my-6">Presentación a cargo do crítico de cinema Martín Pawley</p>
+
+							<div class="event-item">
+								<h3 class="event-title">Prazer Camaradas!</h3>
+								<div class="event-details">
+									<p>José Filipe Costa, 2019, DOC, 106&rsquo;, PT</p>
+									<p>Versión orixinal subtitulada ao español</p>
+								</div>
+								<img src="img/prazer_camaradas.jpg" width="640" height="360" class="event-img" alt="Fotograma da película">
+							</div>
+						</details>
+
+						<details class="event">
+							<summary class="event-meta">
+								00h &mdash; Música
+							</summary>
+							<div class="event-item">
+								<h3 class="event-title">Fíos de Fado</h3>
+								<div class="event-details">
+									<p>Iria Estévez e Gonzo Piña</p>
+								</div>
+								<img src="img/fios_de_fado.jpg" width="640" height="360" class="event-img" alt="DJ Jufra nos pratos">
+							</div>
+						</details>
+
+					</div>
+				</section>
+
+				<section id="25ago" aria-label="Domingo 25 de agosto" aria-labelledby="tab-25ago" role="tabpanel" tabindex="-1" hidden>
+
+					<div class="event-grid lg:grid-cols-2 lg:gap-16 max-w-screen-xl mx-auto">
+
+						<header class="lg:col-span-2">
+							<h2 class="day-title">Domingo 25 de agosto</h2>
+							<p class="day-location">Monforte de Lemos</p>
+						</header>
+						
+						<details class="event">
+							<summary class="event-meta">
+								13h &mdash; Música
+							</summary>
+	
+							<p class="day-venue my-6">Centro do Viño da Ribeira Sacra <a href="https://www.google.com/maps/place/CENTROVINO/@42.522385,-7.51352,18z/data=!4m6!3m5!1s0xd3013e87ddc942f:0x3eb93bd44cc135ca!8m2!3d42.5223848!4d-7.5135201!16s%2Fg%2F11h1z2xvz6!5m1!1e4?hl=gl-ES&entry=ttu" target="_blank" class="btn-map"><svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" fill="currentColor"/><circle cx="12" cy="10" r="3" fill="#f59f03"/></svg></a></p>
+	
+							<div class="event-item">
+								<h3 class="event-title">Celeste Mariposa</h3>
+								<div class="event-details">
+									<p>DJ set de música da África lusófona, PT</p>
+								</div>
+								<img src="img/celeste_mariposa.jpg" width="640" height="360" class="event-img" alt="Fotografía de Celeste Mariposa">
+							</div>
+	
+						</details>
+
+						<details class="event">
+							<summary class="event-meta">
+								16h30 &mdash; Cinema
+							</summary>
+
+							<p class="day-venue my-6">Casa da cultura <a href="https://www.google.com/maps/place/Casa+Da+Cultura+Do+Concello+De+Monforte+De+Lemos+.Lois+Pereiro./@42.5222931,-7.5156254,17z/data=!3m1!4b1!4m6!3m5!1s0xd3013e8670a4ceb:0x2c32a952e59c2e2!8m2!3d42.5222892!4d-7.5130505!16s%2Fg%2F11btlwp931!5m1!1e4?entry=ttu" target="_blank" class="btn-map"><svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" fill="currentColor"/><circle cx="12" cy="10" r="3" fill="#f59f03"/></svg></a></p>
+
+							<div class="event-item">
+								<h3 class="event-title">Batida de Lisboa</h3>
+								<div class="event-details">
+									<p>Rita Maia e Vasco Viana, 2019, DOC, 76&rsquo;, PT</p>
+									<p>Coa presenza do DJ Celeste Mariposa</p>
+									<p>Versión orixinal subtitulada ao galego</p>
+								</div>
+							</div>
+
+							<img src="img/batida_lisboa.jpg" width="640" height="360" class="event-img" alt="Fotograma da película">
+
+						</details>
+
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<footer class="snap-end min-h-svh">
+		<div class="oblique-footer w-full h-20"></div>
+		<div class="p-4 font-medium text-sm">
+			<div class="grid grid-cols-3 gap-4">
+				<div class="flex flex-col justify-between items-start">
+					<p>Promovido por:</p>
+					<img src="img/logos/memoria-e-naufraga.png" alt="Logotipo A memoria é naufraga" loading="lazy" class="my-3">
+				</div>
+				<div class="col-span-2 flex flex-col justify-between items-start">
+					<p>Patrocinado<br> por:</p>
+					<img src="img/logos/deputacion.png" alt="Logotipo Deputación de Lugo. Vicepresidencia. Cultura" loading="lazy" class="my-3">
+				</div>
+				<div class="flex flex-col justify-between items-start">
+					<p>Apoio<br> divulgación:</p>
+					<img src="img/logos/camoes.png" alt="Logotipo Instituto Camões" loading="lazy" class="mb-3">
+				</div>
+				<div class="flex flex-col justify-between items-start">
+					<p>BÓVEDA<br> organiza:</p>
+					<img src="img/logos/a-casa-da-memoria.png" alt="Logotipo de A Casa da Memoria" class="mb-3"></img>
+				</div>
+				<div class="flex flex-col justify-between items-start">
+					<p>BÓVEDA<br> colabora:</p>
+					<img src="img/logos/concello-boveda.png" alt="Logotipo de Concello de Bóveda" class="mt-3"></img>
+				</div>
+				<div class="flex flex-col justify-between items-start">
+					<p>MONFORTE<br> organiza:</p>
+					<img src="img/logos/naufragos.png" alt="Logotipo de Naúfragos do paradiso" class="my-3"></img>
+				</div>
+				<div class="flex flex-col justify-between items-start">
+					<p>MONFORTE<br> colabora:</p>
+					<img src="img/logos/concello-monforte.png" alt="Logotipo del Concello de Monforte de Lemos" class="my-3"></img>
+				</div>
+				<div class="flex flex-col justify-between items-start">
+					<p>MONFORTE<br> colabora:</p>
+					<img src="img/logos/centro-do-vino.png" alt="Logotipo do Centro do Vino" class="my-3"></img>
+				</div>
+			</div>
+		</div>
+		<div class="my-6 px-4">
+			<a href="https://www.instagram.com/vendaval_mostracinemapt/" target="_blank" class="text-white block w-6 h-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z"/></svg></a>
+		</div>
+	</footer>
+	
 </body>
 </html>
