@@ -809,6 +809,10 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -850,6 +854,10 @@ video {
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -898,6 +906,22 @@ video {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-40 {
+  max-width: 10rem;
+}
+
+.max-w-64 {
+  max-width: 16rem;
+}
+
+.max-w-36 {
+  max-width: 9rem;
+}
+
+.max-w-screen-lg {
+  max-width: 1024px;
 }
 
 .flex-grow {
@@ -1032,6 +1056,20 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@media (min-width: 640px) {
+  .sm\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:bottom-16 {
     bottom: 4rem;
@@ -1094,6 +1132,20 @@ video {
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
