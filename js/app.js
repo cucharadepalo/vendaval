@@ -24,7 +24,7 @@ function smoothScrollers() {
 			e.preventDefault()
 			const des = new URL(el.href)
 			const tar = document.querySelector(des.hash)
-			const offset = tar.getBoundingClientRect().top + window.scrollY
+			const offset = tar.getBoundingClientRect().top
 			window.scroll({
 				top: offset, 
 				left: 0, 
