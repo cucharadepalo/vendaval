@@ -93,12 +93,18 @@
 		@apply flex-1;
 	}
 	.tab-menu > li > button {
-		@apply block w-full text-left font-display tracking-tight pt-2 pb-16 font-bold text-xl uppercase px-4 focus:outline-none md:pb-20 2xl:pb-28 2xl:text-3xl 2xl:pt-4;
+		@apply block w-full text-left font-display tracking-tight pt-2 pb-16 font-bold text-xl leading-none uppercase px-4 focus:outline-none md:pb-20 2xl:pb-28 2xl:text-3xl 2xl:pt-4;
 	}
 	.tab-menu > li:first-child > button {
 		@apply md:pl-8 2xl:pl-16;
 	}
 	.tab-menu > li > [aria-selected="true"] {
 		@apply bg-amarelo text-black;
+	}
+	.tab-menu > li > button > .tab-day {
+		@apply invisible font-normal text-sm uppercase md:text-lg 2xl:text-xl;
+	}
+	.tab-menu > li > [aria-selected="true"] > .tab-day {
+		@apply visible;
 	}
 }

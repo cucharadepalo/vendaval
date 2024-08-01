@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="gl" class="font-mono leading-tight snap-y snap-proximity">
+<html lang="gl" class="font-mono leading-tight">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,8 @@
 	<script src="js/app.js" defer></script>
 </head>
 <body class="bg-verdescuro text-white">
-	<header id="splash" class="relative h-svh snap-start px-4 py-4 pb-8 flex flex-col justify-between items-center gap-8 w-full max-w-screen-xl mx-auto md:px-8 md:pt-8 md:pb-16">
-		<div class="splash-bg top-4 left-4 right-2 bottom-8 md:top-8 md:left-8 md:right-4 md:bottom-16"></div>
+	<header id="splash" class="relative h-screen px-4 py-4 pb-[20vh] flex flex-col justify-between items-center gap-8 w-full max-w-screen-xl mx-auto md:px-8 md:pt-8">
+		<div class="splash-bg top-4 left-4 right-2 bottom-[20vh] md:top-8 md:left-8 md:right-4"></div>
 		<img src="img/vendaval-title.svg" width="321" height="57" alt="1&ordf; Mostra de Cinema Portugués da Ribeira Sacra. 23-25 Agosto." class="w-full h-auto block max-w-screen-xl -mt-1">
 
 		<a href="#programa"  class="btn smooth-scroller text-xl shadow-xl mt-auto flex justify-between gap-2 -skew-x-6 ml-auto mr-4"><span class="skew-x-6">Programa</span> <span class="block bounce">&darr;</span></a>
@@ -23,18 +23,18 @@
 		</h1>
 	</header>
 
-	<main id="programa" class="snap-start">
-		<div class="min-h-svh flex flex-col w-full max-w-[2560px] mx-auto">
-			<div class="tabs sticky top-0">
+	<main id="programa">
+		<div class="min-h-screen flex flex-col w-full max-w-[2560px] mx-auto">
+			<div class="tabs sticky">
 				<ul class="tab-menu" role="tablist">
 					<li>
-						<button id="tab-23ago" aria-selected="true" aria-controls="23ago" role="tab" type="button" tabindex="0">23<span class="md:hidden">/</span><span class="hidden md:inline"> de </span>ago<span class="hidden md:inline">sto</span></button>
+						<button id="tab-23ago" aria-selected="true" aria-controls="23ago" role="tab" type="button" tabindex="0">23<span class="md:hidden">/</span><span class="hidden md:inline"> de </span>ago<span class="hidden md:inline">sto</span> <span class="tab-day">Venres</span></button>
 					</li>
 					<li>
-						<button id="tab-24ago" aria-selected="false" aria-controls="24ago" role="tab" type="button" tabindex="-1">24<span class="md:hidden">/</span><span class="hidden md:inline"> de </span>ago<span class="hidden md:inline">sto</span></button>
+						<button id="tab-24ago" aria-selected="false" aria-controls="24ago" role="tab" type="button" tabindex="-1">24<span class="md:hidden">/</span><span class="hidden md:inline"> de </span>ago<span class="hidden md:inline">sto</span> <span class="tab-day">Sábado</span></button>
 					</li>
 					<li>
-						<button id="tab-25ago" aria-selected="false" aria-controls="25ago" role="tab" type="button" tabindex="-1">25<span class="md:hidden">/</span><span class="hidden md:inline"> de </span>ago<span class="hidden md:inline">sto</span></button>
+						<button id="tab-25ago" aria-selected="false" aria-controls="25ago" role="tab" type="button" tabindex="-1">25<span class="md:hidden">/</span><span class="hidden md:inline"> de </span>ago<span class="hidden md:inline">sto</span> <span class="tab-day">Domingo</span></button>
 					</li>
 				</ul>
 			</div>
@@ -43,13 +43,13 @@
 
 				<section id="23ago" aria-label="Venres 23 de agosto" aria-labelledby="tab-23ago" role="tabpanel" tabindex="0">
 					<header>
-						<h2 class="day-title">Venres 23 de agosto</h2>
+						<h2 class="day-title hidden">Venres 23 de agosto</h2>
 						<p class="day-location">Xullán, Bóveda</p>
 						<p class="day-venue">Casa da Memoria <a href="https://www.google.com/maps/place/Casa+da+memoria/@42.6392777,-7.4717012,17z/data=!3m1!4b1!4m6!3m5!1s0xd303f99e14d7301:0xdd44240b739d5051!8m2!3d42.6392738!4d-7.4691263!16s%2Fg%2F11sw2wf03p!5m1!1e4?hl=gl-ES&entry=ttu" target="_blank" class="btn-map"><svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" fill="currentColor"/><circle cx="12" cy="10" r="3" fill="#f59f03"/></svg></a></p>
 					</header>
 
 					<div class="event-grid lg:grid-cols-3 lg:gap-16">
-						<details class="event" name="23ago">
+						<details class="event">
 							<summary class="event-meta">
 								19h &mdash; Cinema
 							</summary>
@@ -72,7 +72,7 @@
 								<img src="img/cartas_a_uma_dictadura.jpg" width="640" height="360" class="event-img" alt="Fotograma da película">
 							</div>
 						</details>
-						<details class="event" name="23ago">
+						<details class="event">
 							<summary class="event-meta">
 								22h &mdash; Cinema ao aire libre
 							</summary>
@@ -86,7 +86,7 @@
 								<img src="img/o_corno_(c)Amador_Lorenzo_6.jpg" width="640" height="360" class="event-img" alt="Fotograma da película">
 							</div>
 						</details>
-						<details class="event" name="23ago">
+						<details class="event">
 							<summary class="event-meta">
 								00h &mdash; Música
 							</summary>
@@ -110,7 +110,7 @@
 
 					<div class="event-grid lg:grid-cols-4 lg:gap-8 2xl:gap-16">
 
-						<details class="event" name="24ago">
+						<details class="event">
 							<summary class="event-meta">
 								17h &mdash; Cinema + Taller
 							</summary>
@@ -125,7 +125,7 @@
 							</div>
 						</details>
 
-						<details class="event" name="24ago">
+						<details class="event">
 							<summary class="event-meta">
 								19h &mdash; Cinema
 							</summary>
@@ -142,7 +142,7 @@
 							</div>
 						</details>
 						
-						<details class="event" name="24ago">
+						<details class="event">
 							<summary class="event-meta">
 								22h &mdash; Cinema ao aire libre
 							</summary>
@@ -226,7 +226,7 @@
 		</div>
 	</main>
 
-	<footer class="snap-end min-h-svh w-full">
+	<footer class="w-full">
 		<div class="oblique-footer w-full h-20 2xl:h-36"></div>
 		<div class="p-4 font-medium text-sm md:px-8">
 			<div class="grid grid-cols-3 gap-4 max-w-screen-lg mx-auto sm:grid-cols-4 sm:gap-8 xl:grid-cols-5">
