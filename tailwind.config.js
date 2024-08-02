@@ -9,6 +9,9 @@ module.exports = {
 		extend: {
 			colors: {
 				'verdescuro': '#0e6263',
+				'laranxaforte': '#bc3908',
+				'azulforte': '#0081cc',
+				'magentaescuro': '#820263',
 				'black': '#191716',
 				'amarelo': '#f59f03'
 			},
