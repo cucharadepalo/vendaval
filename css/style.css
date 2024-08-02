@@ -639,6 +639,10 @@ body,
   97% {
     background-color: #bc3908;
   }
+
+  100% {
+    background-color: #0e6263;
+  }
 }
 
 @keyframes stop-1-1 {
@@ -672,6 +676,10 @@ body,
 
   97% {
     stop-color: #0081cc;
+  }
+
+  100% {
+    stop-color: #820263;
   }
 }
 
@@ -707,6 +715,10 @@ body,
   97% {
     stop-color: #820263;
   }
+
+  100% {
+    stop-color: #f59f03;
+  }
 }
 
 @keyframes stop-2-1 {
@@ -740,6 +752,10 @@ body,
 
   97% {
     stop-color: #5e2477;
+  }
+
+  100% {
+    stop-color: #d48519;
   }
 }
 
@@ -1321,16 +1337,8 @@ body,
   margin-left: auto;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .block {

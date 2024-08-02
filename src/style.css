@@ -62,6 +62,7 @@
 		72% { background-color: theme('colors.magentaescuro');}
 		75% { background-color: theme('colors.laranxaforte');}
 		97% { background-color: theme('colors.laranxaforte');}
+		100% { background-color: theme('colors.verdescuro');}
 	}
 	@keyframes stop-1-1 {
 		0% { stop-color: theme('colors.magentaescuro');}
@@ -72,6 +73,7 @@
 		72% { stop-color: theme('colors.amarelo');}
 		75% { stop-color: theme('colors.azulforte');}
 		97% { stop-color: theme('colors.azulforte');}
+		100% { stop-color: theme('colors.magentaescuro');}
 	}
 	@keyframes stop-1-2 {
 		0% { stop-color: theme('colors.amarelo');}
@@ -82,6 +84,7 @@
 		72% { stop-color: theme('colors.azulforte');}
 		75% { stop-color: theme('colors.magentaescuro');}
 		97% { stop-color: theme('colors.magentaescuro');}
+		100% { stop-color: theme('colors.amarelo');}
 	}
 	@keyframes stop-2-1 {
 		0% { stop-color: #d48519;}
@@ -92,6 +95,7 @@
 		72% { stop-color: #4a869c}
 		75% { stop-color: #5e2477;}
 		97% { stop-color: #5e2477;}
+		100% { stop-color: #d48519;}
 	}
 
 	.btn {
