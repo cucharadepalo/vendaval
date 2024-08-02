@@ -24,8 +24,9 @@ function smoothScrollers() {
 			e.preventDefault()
 			const des = new URL(el.href)
 			const tar = document.querySelector(des.hash)
-			const offset = tar.getBoundingClientRect().top
-			window.scroll({
+			const offset = tar.getBoundingClientRect().top + window.scrollY
+			console.log(offset);
+			window.scrollTo({
 				top: offset, 
 				left: 0, 
 				behavior: 'smooth' 
@@ -118,9 +119,22 @@ function openDetails(screenWidth) {
 	}
 }
 
-openDetails(window.innerWidth)
+function initMoreInfoBtns() {
+	const btns = document.querySelectorAll('.event-more')
+	btns.forEach( btn => {
+		btn.addEventListener('click', event => {
+			const id = btn.dataset.target
+			const dialog = document.getElementById(id)
+			console.log({id, dialog})
+			dialog.show()
+		})
+	})
+}
+
+// openDetails(window.innerWidth)
 initTabs()
 smoothScrollers()
+initMoreInfoBtns()
 window.addEventListener('resize', debounce(function (e) {
 	openDetails(window.innerWidth)
 }, 250, false))

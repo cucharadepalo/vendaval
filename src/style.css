@@ -3,22 +3,76 @@
 @tailwind utilities;
 
 @layer components {
-	.splash-bg {
-		position: absolute;
-		background-image: url('../img/vendaval-illustration.svg');
-		background-size: 100%;
-		background-position: right bottom;
-		background-repeat: no-repeat;
-		z-index: 0;
+	:root {
+		--color-animation-duration: 60s;
+	}
+	body, 
+	#splash,
+	.tabs {
+		animation: splash-color var(--color-animation-duration) ease-in infinite;
 	}
 	#splash > *:not(.splash-bg) {
 		z-index: 1;
 	}
+
+	#splash .stop-1-1 {
+		animation: stop-1-1 var(--color-animation-duration) ease-in infinite;
+	}
+	#splash .stop-1-2,
+	#splash .stop-2-2 {
+		animation: stop-1-2 var(--color-animation-duration) ease-in infinite;
+	}
+	#splash .stop-2-1 {
+		animation: stop-2-1 var(--color-animation-duration) ease-in infinite;
+	}
+
+	@keyframes splash-color {
+		0% { background-color: theme('colors.verdescuro');}
+		22% { background-color: theme('colors.verdescuro');}
+		25% { background-color: theme('colors.azulforte');}
+		47% { background-color: theme('colors.azulforte');}
+		50% { background-color: theme('colors.magentaescuro');}
+		72% { background-color: theme('colors.magentaescuro');}
+		75% { background-color: theme('colors.laranxaforte');}
+		97% { background-color: theme('colors.laranxaforte');}
+	}
+	@keyframes stop-1-1 {
+		0% { stop-color: theme('colors.magentaescuro');}
+		22% { stop-color: theme('colors.magentaescuro');}
+		25% { stop-color: #166164;}
+		47% { stop-color: #166164;}
+		50% { stop-color: theme('colors.amarelo');}
+		72% { stop-color: theme('colors.amarelo');}
+		75% { stop-color: theme('colors.azulforte');}
+		97% { stop-color: theme('colors.azulforte');}
+	}
+	@keyframes stop-1-2 {
+		0% { stop-color: theme('colors.amarelo');}
+		22% { stop-color: theme('colors.amarelo');}
+		25% { stop-color: theme('colors.laranxaforte');}
+		47% { stop-color: theme('colors.laranxaforte');}
+		50% { stop-color: theme('colors.azulforte');}
+		72% { stop-color: theme('colors.azulforte');}
+		75% { stop-color: theme('colors.magentaescuro');}
+		97% { stop-color: theme('colors.magentaescuro');}
+	}
+	@keyframes stop-2-1 {
+		0% { stop-color: #d48519;}
+		22% { stop-color: #d48519;}
+		25% { stop-color: #8e4924;}
+		47% { stop-color: #8e4924;}
+		50% { stop-color: #4a869c}
+		72% { stop-color: #4a869c}
+		75% { stop-color: #5e2477;}
+		97% { stop-color: #5e2477;}
+	}
+
 	.btn {
-		@apply font-mono font-medium uppercase bg-black px-4 py-2 inline-block hover:text-amarelo;
+		@apply font-mono font-medium uppercase bg-black text-white px-4 py-2 inline-block hover:text-amarelo;
 	}
 	.btn-map {
-		@apply inline-block align-middle;
+		@apply inline-block align-middle w-6 h-6 bg-no-repeat bg-cover bg-center;
+		background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%2021.7C17.3%2017%2020%2013%2020%2010a8%208%200%201%200-16%200c0%203%202.7%206.9%208%2011.7z%22%20fill%3D%22currentColor%22%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2210%22%20r%3D%223%22%20fill%3D%22%23f59f03%22%2F%3E%3C%2Fsvg%3E");
 	}
 	.bounce {
 		animation: bounce 2s infinite;
@@ -26,31 +80,44 @@
 	
 	@keyframes bounce {
 		0%, 20%, 50%, 80%, 100% {
-			transform: translateY(0);
+			transform: translateY(0.1rem);
 		}
 		40% {
-			transform: translateY(-1rem);
+			transform: translateY(-0.75rem);
 		}
 		60% {
 			transform: translateY(-0.5rem);
 		}
 	}
 
+	.day-header {
+		@apply mt-4;
+	}
+
 	.day-title {
 		@apply font-display tracking-tight text-3xl font-bold uppercase leading-tight;
 	}
 	.day-location {
-		@apply font-display tracking-tight font-light text-2xl uppercase leading-tight;
+		@apply font-display tracking-tight text-2xl uppercase leading-tight;
 	}
 	.day-venue {
-		@apply font-display uppercase text-lg;
+		@apply font-display font-medium uppercase text-lg;
 	}
 
 	.event {
-		@apply mt-8;
+		@apply mt-4 relative;
+	}
+	.event-more {
+		@apply absolute -top-1 right-0 block bg-black text-white text-xl px-2 -skew-x-12 hover:text-amarelo;
 	}
 	.event-meta {
 		@apply font-display uppercase font-bold text-xl leading-tight cursor-pointer lg:block;
+	}
+	.event-summary {
+		@apply mt-2 ml-14 leading-tight text-balance;
+	}
+	.event-summary strong {
+		@apply font-semibold;
 	}
 	.event-item {
 		@apply mt-8
@@ -68,9 +135,6 @@
 		@apply mt-6
 	}
 
-	.tabs {
-		background: linear-gradient(175deg, theme('colors.verdescuro') calc(50% - 1px), theme('colors.amarelo') calc(50% + 1px));
-	}
 	.oblique-footer {
 		background: linear-gradient(175deg, theme('colors.amarelo') calc(50% - 1px), theme('colors.verdescuro') calc(50% + 1px));
 	}
@@ -84,16 +148,14 @@
 		}
 	}
 
-	
-
 	.tab-menu {
-		@apply flex items-center;
+		@apply flex items-stretch;
 	}
 	.tab-menu > li {
 		@apply flex-1;
 	}
 	.tab-menu > li > button {
-		@apply block w-full text-left font-display tracking-tight pt-2 pb-16 font-bold text-xl leading-none uppercase px-4 focus:outline-none md:pb-20 2xl:pb-28 2xl:text-3xl 2xl:pt-4;
+		@apply block w-full h-full text-left font-display tracking-tight pt-2 pb-6 font-bold text-xl leading-none uppercase px-4 focus:outline-none 2xl:text-3xl 2xl:pt-4;
 	}
 	.tab-menu > li:first-child > button {
 		@apply md:pl-8 2xl:pl-16;
