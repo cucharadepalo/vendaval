@@ -214,6 +214,7 @@
 
 	.modal-content {
 		@apply -translate-y-[120%] transition-transform duration-500 ease-in;
+		-webkit-overflow-scrolling: touch;
 	}
 
 	.info-modal.open .modal-content {

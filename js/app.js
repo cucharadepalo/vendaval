@@ -154,14 +154,16 @@ function fillModalContent(template) {
 function openModal() {
 	const modal = document.getElementById('modal')
 	const main = document.querySelector('main')
+	const modalContent = document.querySelector('.modal-content');
 
 	modal.classList.remove('hidden')
 	modal.setAttribute('aria-hidden', 'false')
 	main.setAttribute('aria-hidden', 'true')
 
 	setTimeout( () => {
-		document.body.classList.add('overflow-hidden')
 		modal.classList.add('open')
+		document.body.classList.add('overflow-hidden')
+		bodyScrollLock.disableBodyScroll(modalContent);
 	}, 100)
 }
 
@@ -177,6 +179,7 @@ function closeModal() {
 	setTimeout( () => {
 		modal.classList.add('hidden')
 		document.body.classList.remove('overflow-hidden')
+		bodyScrollLock.enableBodyScroll(modalContent)
 		modalContent.innerHTML = ''
 	}, 500)
 }
