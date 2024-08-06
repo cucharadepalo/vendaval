@@ -1399,10 +1399,6 @@ body.animated-colors,
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .max-h-full {
   max-height: 100%;
 }
@@ -1579,11 +1575,6 @@ body.animated-colors,
   padding-right: 1rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1703,11 +1694,6 @@ body.animated-colors,
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 
   .md\:pt-6 {
