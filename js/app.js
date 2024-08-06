@@ -172,6 +172,7 @@ function closeModal() {
 	const modalContent = document.querySelector('.modal-content')
 	const main = document.querySelector('main')
 
+	modalContent.scrollTop = 0
 	modal.classList.remove('open')
 	modal.setAttribute('aria-hidden', 'true')
 	main.setAttribute('aria-hidden', 'false')

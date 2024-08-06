@@ -584,9 +584,9 @@ body,
   --color-animation-duration: 60s;
 }
 
-body, 
-	#splash,
-	.tabs {
+body.animated-colors, 
+	.animated-colors #splash,
+	.animated-colors .tabs {
   animation: splash-color var(--color-animation-duration) ease-in infinite;
 }
 
@@ -594,16 +594,16 @@ body,
   z-index: 1;
 }
 
-#splash .stop-1-1 {
+.animated-colors #splash .stop-1-1 {
   animation: stop-1-1 var(--color-animation-duration) ease-in infinite;
 }
 
-#splash .stop-1-2,
-	#splash .stop-2-2 {
+.animated-colors #splash .stop-1-2,
+	.animated-colors #splash .stop-2-2 {
   animation: stop-1-2 var(--color-animation-duration) ease-in infinite;
 }
 
-#splash .stop-2-1 {
+.animated-colors #splash .stop-2-1 {
   animation: stop-2-1 var(--color-animation-duration) ease-in infinite;
 }
 
@@ -1378,8 +1378,8 @@ body,
   height: 5rem;
 }
 
-.h-\[75vh\] {
-  height: 75vh;
+.h-\[75dvh\] {
+  height: 75dvh;
 }
 
 .h-auto {
@@ -1439,8 +1439,8 @@ body,
   max-width: 600px;
 }
 
-.max-w-\[calc\(75vh\/1\.275\)\] {
-  max-width: calc(75vh / 1.275);
+.max-w-\[calc\(75dvh\/1\.275\)\] {
+  max-width: calc(75dvh / 1.275);
 }
 
 .max-w-screen-lg {
@@ -1561,6 +1561,11 @@ body,
   background-color: rgb(245 159 3 / var(--tw-bg-opacity));
 }
 
+.bg-verdescuro {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 98 99 / var(--tw-bg-opacity));
+}
+
 .fill-amarelo {
   fill: #f59f03;
 }
@@ -1579,8 +1584,16 @@ body,
   padding-right: 2rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .font-mono {
@@ -1695,6 +1708,10 @@ body,
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:pt-6 {
+    padding-top: 1.5rem;
   }
 }
 

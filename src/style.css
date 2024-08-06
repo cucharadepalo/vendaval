@@ -33,23 +33,23 @@
 	:root {
 		--color-animation-duration: 60s;
 	}
-	body, 
-	#splash,
-	.tabs {
+	body.animated-colors, 
+	.animated-colors #splash,
+	.animated-colors .tabs {
 		animation: splash-color var(--color-animation-duration) ease-in infinite;
 	}
 	#splash > *:not(.splash-bg) {
 		z-index: 1;
 	}
 
-	#splash .stop-1-1 {
+	.animated-colors #splash .stop-1-1 {
 		animation: stop-1-1 var(--color-animation-duration) ease-in infinite;
 	}
-	#splash .stop-1-2,
-	#splash .stop-2-2 {
+	.animated-colors #splash .stop-1-2,
+	.animated-colors #splash .stop-2-2 {
 		animation: stop-1-2 var(--color-animation-duration) ease-in infinite;
 	}
-	#splash .stop-2-1 {
+	.animated-colors #splash .stop-2-1 {
 		animation: stop-2-1 var(--color-animation-duration) ease-in infinite;
 	}
 
